@@ -1,28 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10f01015b7.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<header>
-    <a href="x" class="logo">Logo</a>
-    <ul class="menu">
-        <li id="main" ><a href="Main.html">Main</a></li>
-        <li id="kalendar"><a  href="kalendar.html">Kalendar</a></li>
-        <li id="tabulka"><a  href="tabulka.html">Tabulka</a></li>
-        <li id="trate"><a  href="trate.html">Trate</a></li>
-    </ul>
-    <div class="search">
-        <label>
-            <input type="text" placeholder="Search">
-        </label>
-    </div>
-</header>
+<body class="m-0 p-0 box-border bg-gray-300">
+    <header class="bg-gray-500 text-blue-300 text-3xl flex flex-wrap items-center mx-auto">
+        <img src="/img/logo.png" alt="Logo" class="logo w-16 " >
+            <ul class="menu">
+                <li id="main" class="flex flex-wrap" ><a href="Main.html">Main</a></li>
+                <li id="kalendar" class="flex flex-wrap"><a  href="kalendar.html">Kalendar</a></li>
+                <li id="tabulka" class="flex flex-wrap"><a  href="tabulka.html">Tabulka</a></li>
+                <li id="trate" class="flex flex-wrap"><a  href="trate.html">Trate</a></li>
+            </ul>
+        <div class="search ">
+            <input type="text" placeholder="Search" class="border-blue-300 ring-2 placeholder-blue-300 focus:ring-black focus:placeholder-black">
+        </div>
+    </header>
+<!-- Použitý template z https://tailwind-elements.com/docs/standard/components/gallery/ -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+         
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.smf.sk/medias/Borsky_Mikulas_trat-1024x576.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Rallycross a Motocross club Borský Mikuláš</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto: Borský Mikuláš</h1>
+                  <p class="leading-relaxed">Informácia o možnosti trénovania (dni, časy a i.):
+                    Tréningové dni sú: pondelok, piatok a sobota od 9:00 do 19:00. Deti po dohode môžu trénovať aj mimo tréningové dni. Vždy je nutné sa náhlásiť pred alebo po príchode na trať.
+                    
+                    Bližšie informácie o trati: (bližšie špecifiká, opis trate,…):
+                    Naša dráha, či motokosová alebo endurová je prevažne pieskového charakteru, preto nám umožňuje prevádzkovať hlavne v jesenných a zimných mesiacoch. Toto vítajú hlavne jazdci, ktorí nechcú podceniť zimnú prípravu. Dĺžka motokrosovej dráhy je 1870m a stále sa predlžuje.</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4 ">
+              <div class="flex relative h-full">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://mxopen.sk/media/article/240892003_10219860935260382_1520260413205768623_n.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MX Vinohrad – Veľké Uherce</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	Veľké Uherce</h1>
+                  <p class="leading-relaxed">Popis:
+                    Motokrosová trať s dlhou históriou, ktorá prešla v roku 2018 kompletnou rekonštrukciou a prerábkou pod vedením svetoznámeho staviteľa tratí Grega Atkinsa. Spĺňa všetky kritéria podľa predpisov FIM.
+                    
+                    Možnosti trénovania:  
+                    Každú stredu od 14:00 do 19:00
+                    Poplatok za tréning: 10 € – dospelí, 5 € – deti a ženy </p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative h-full">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://i.ytimg.com/vi/upMyo9ihmEA/maxresdefault.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">MX – OFFROAD Gabčíkovo</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	Gabčíkovo</h1>
+                  <p class="leading-relaxed">Popis:	Dĺžka trate: 3,6 km
+                    Šírka trate: 8 – 12 m
+                    Časť trate MX, lesík, štrková zóna
+                    Možnosti trénovania:  	Je potrebný kontakt prostredníctvom FB</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative h-full">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://i.ytimg.com/vi/c7sZtuo8Bbk/maxresdefault.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Motokrosový areál NKC Sverepec</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	SVEREPEC</h1>
+                  <p class="leading-relaxed">Popis: Známa trať vo Sverepci 
+                    Možnosti trénovania:  
+                    Tréningy je potrebné dohodnúť telefonicky vopred.
+                    Tréningy a jazdy v priestoroch NKC, sú spoplatnené:- ohlásený tréning 10€ / jazdci s lic.SMF 7€
+                    – neohlásený tréning 15€ / jazdci s lic. SMF 10€</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative h-full">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://i.ytimg.com/vi/oQlHIkO0SCk/maxresdefault.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Motokrosový areál ZE-TEC Slovenské Pravno</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	Slovenské Pravno</h1>
+                  <p class="leading-relaxed">    Do motokrosového areálu sa vstupuje po kontaktovaní správcu a jeho súhlase
+                    Jazdenie je po súhlase správcu možné od 7 hod. do 20 hod.
+                    V prípade svojvoľného vstupu do areálu sa bude skutok považovať za neoprávnený vstup na cudzí pozemok
+                    Pri vstupe do areálu za účelom tréningu si musí jazdec zabezpečiť osobu, ktorá mu v prípade úrazu poskytne prvú pomoc
+                    Jazdec musí mat na sebe všetky bezpečnostné prvky podľa platných predpisov SMF
+                    Prísny zákaz jazdiť v protismere!!!! Smer jazdy je v protismere hodinových ručičiek.
+                    Odpadky je potrebné zanechávať len na vopred vyhradenom mieste k tomuto účelu</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative h-full">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.smf.sk/medias/trat_MX_Gbely_1.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                  <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Motokrosová trať Gbely</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	GBELY</h1>
+                  <p class="leading-relaxed">Tréningy sú na pláne v:
+                    utorok – 13:00-20:00
+                    štvrtok – 12:00-20:00
+                    sobotu a nedeľu – 10:00-18:00
+                
+                    NOVÁ CENA: 8 Eur/250 Kč</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative h-full">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.smf.sk/materials/supervisor/motokros/2016/trat_kechnec/e650d595-9832-40c0-ab73-0a34d685fe9f_lavice_p_strana.jpg">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Motokrosová trať Kechnec</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	KECHNEC</h1>
+                    <p class="leading-relaxed">Popis: bývalá štrkovňa, podklad: štrk, hlina; dĺžka trate: 1975m, šírka: minimálne 8m, 12 lavíc, prevýšenie trate: 14m; v roku 2015 táto trať bola súčasťou ISDE 2015, na ktorej sa konal záverečný motokros</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative h-full">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="data:image/jpeg;base64,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">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Motokrosová trať Ješková Ves Brody</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	JEŠKOVÁ VES</h1>
+                    <p class="leading-relaxed">Popis:	Denný poplatok za tréning je 5€ a permanentka na celý rok 30€
+                        Možnosti trénovania:  	* Streda  14:00 – 20:00 hod.
+                        * Piatok  14:00 – 20:00 hod.
+                        * Sobota 10:00 – 19:30 hod.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-1/3 sm:w-1/2 p-4">
+                <div class="flex relative h-full">
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.smf.sk/medias/60639152_1057048861172799_1625475431673102336_n.jpg">
+                  <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">Motokrosová trať Turlíky Spišské Vlachy</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Miesto:	SPIŠKÉ VLACHY</h1>
+                    <p class="leading-relaxed">Popis: 	Trať je prírodná so 4 lavicami, povrch hlinitý, dĺžka trate 1600m
+                        Možnosti trénovania:	Pondelok – piatok: 15:00 – 18:00 hod.
+                            Sobota a nedeľa: 10:00 – 18:00 hod.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+          </div>
+        </div>
+      </section>
 
+    <footer class="px-4 py-8 bg-gray-600 text-coolGray-600 text-blue-300">
+        <div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+            <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+                <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-full bg-violet-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5 rounded-full text-coolGray-50">
+                        <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
+                    </svg>
+                </div>
+                <ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
